@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Cronometro</title>
+</head>
+<body>
+    <article class="campus">
+        <img src="storage/Campus.png" alt="noHayImagen">
+    </article>
+    <article class="contenedor">
+        <section class="numero">
+            <div class="reloj" id="Horas">00</div>
+            <div class="reloj" id="Minutos">:00</div>
+            <div class="reloj" id="Segundos">:00</div>
+            <div class="reloj" id="Centesimas">:00</div>
+        </section>
+        <section class="botones">
+            <button class="boton" id="inicio" onclick="inicio();"><i class='bx bx-play'></i></button>
+            <button class="boton" id="parar" onclick="parar();" disabled><i class='bx bx-stop'></i></button>
+            <button class="boton" id="continuar" onclick="inicio();" disabled><i class='bx bx-pause'></i></button>
+            <button class="boton" id="reinicio" onclick="reinicio();" disabled><i class='bx bx-reset'></i></button>
+        </section>    
+	</article>
+</body>
+</html>
